@@ -1,0 +1,92 @@
+<!---create a web page that contains a image of amoeba, you have to apply background repeat property to repeat then create another div  there add image of paramecium there apply background blend mode and also create a link of amoeba and paramecium in third div and in fourth div use list tags that can specify the charachters of amoeba and paramecium, apply all the background properties posible in the 4th div which can comprise of background color,BG origin,BG position--->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amoeba and Paramecium</title>
+
+    <style>
+      body {
+        background-color: rgb(127, 144, 255);
+      }
+      .first {
+        background-repeat: repeat;
+        height: 50vh;
+        background-image: url("data:image/jpeg;base64,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");
+        border-radius: 30px;
+
+        margin: 10px;
+      }
+
+      img {
+        width: 150px;
+      }
+
+      .second {
+        background-image: url("https://th.bing.com/th?id=OSK.4f5751562349ff9bb6fd4769b6984a27&w=148&h=148&c=7&o=6&dpr=1.3&pid=SANGAM");
+        background-blend-mode: color;
+        background-repeat: no-repeat;
+        height: 50vh;
+
+        border-radius: 30px;
+      }
+
+      .third {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border: 5px solid rgb(0, 0, 0);
+        border-radius: 30px;
+        margin: 10px;
+      }
+
+      .third a {
+        text-decoration: none;
+      }
+      .third a:visited {
+        color: rgb(37, 64, 41);
+      }
+      .fourth {
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        margin: 10px;
+        padding: 10px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third">
+      <a href="https://byjus.com/biology/amoeba/">Amoeba (open)</a>
+      <a href="https://byjus.com/neet/paramecium/">Paramecium (open)</a>
+    </div>
+    <div class="fourth">
+      <ol>
+        <li>Amoeba</li>
+        <ul>
+          <li>
+            Paramecium, also called “slipper animalcule”, was among the first
+            ciliates to be seen by microscopists, in the late 17th century.
+          </li>
+        </ul>
+
+        <li>Paramecium</li>
+        <ul>
+          <li>
+            The fossil amoebae were found in ancient Scottish rock dating to 400
+            million years ago, pushing back the origin of the organisms by
+            hundreds of millions of years.
+          </li>
+        </ul>
+      </ol>
+    </div>
+  </body>
+</html> 
