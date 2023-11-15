@@ -1,5 +1,5 @@
 def s(*args):
-    print(sum(args))
+     print(sum(args))
 
 
 s(2, 3)
