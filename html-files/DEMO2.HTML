@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Portal</title>
+  <style>
+        /* Basic styling */
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+        }
+        header {
+          background-color: #333;
+          color: #fff;
+          padding: 20px;
+          text-align: center;
+        }
+        header h1 {
+          margin: 5px 0;
+        }
+        header p {
+          margin-top: 5px;
+        }
+        header div {
+          margin-top: 10px;
+        }
+        header div button {
+          padding: 8px 20px;
+          margin: 0 10px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          background-color: #555;
+          color: #fff;
+        }
+        header div button:hover {
+          background-color: #777;
+        }
+        nav ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          background-color: #444;
+          text-align: center;
+        }
+        nav ul li {
+          display: inline;
+          margin: 0 10px;
+        }
+        nav ul li a {
+          text-decoration: none;
+          color: #fff;
+        }
+        section {
+          padding: 20px;
+          margin: 20px;
+          background-color: #fff;
+        }
+        section h2 {
+          margin-top: 0;
+        }
+        form {
+          margin-top: 20px;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="password"],
+        form textarea {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        form input[type="submit"],
+        .job button {
+          padding: 8px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          background-color: #555;
+          color: #fff;
+        }
+        form input[type="submit"]:hover,
+        .job button:hover {
+          background-color: #777;
+        }
+        footer {
+          background-color: #333;
+          color: #fff;
+          text-align: center;
+          padding: 10px;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+        }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to our Job Portal</h1>
+    <p>Find the perfect job for you</p>
+    <div>
+      <button onclick="location.href='#login'">Login</button>
+      <button onclick="location.href='#signup'">Sign Up</button>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#search">Search Jobs</a></li>
+      <li><a href="#post">Post a Job</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+  <section id="login">
+    <h2>Login</h2>
+    <form action="/login" method="POST">
+      <input type="email" name="email" placeholder="Email">
+      <input type="password" name="password" placeholder="Password">
+      <input type="submit" value="Login">
+    </form>
+  </section>
+  <section id="signup">
+    <h2>Sign Up</h2>
+    <form action="/signup" method="POST">
+      <input type="text" name="fullname" placeholder="Full Name">
+      <input type="email" name="email" placeholder="Email">
+      <input type="password" name="password" placeholder="Password">
+      <input type="submit" value="Sign Up">
+    </form>
+  </section>
+  <section id="home">
+    <h2>Latest Jobs</h2>
+    <div id="jobListings">
+      <!-- This section will be populated dynamically -->
+      <div class="job">
+        <h3>Job Title</h3>
+        <p>Company: XYZ Inc.</p>
+        <p>Description: Lorem ipsum dolor sit amet...</p>
+        <button>Apply</button>
+      </div>
+      <!-- Additional job listings -->
+    </div>
+  </section>
+  <section id="search">
+    <h2>Search Jobs</h2>
+    <form action="/search" method="GET">
+      <input type="text" name="keyword" placeholder="Keyword">
+      <input type="text" name="location" placeholder="Location">
+      <input type="submit" value="Search">
+    </form>
+  </section>
+  <section id="post">
+    <h2>Post a Job</h2>
+    <form action="/post-job" method="POST">
+      <input type="text" name="job_title" placeholder="Job Title">
+      <input type="text" name="company_name" placeholder="Company Name">
+      <textarea name="job_description" placeholder="Job Description"></textarea>
+      <input type="submit" value="Post Job">
+    </form>
+  </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to our job portal! Learn more about our mission and vision.</p>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Contact information goes here.</p>
+  </section>
+  <footer>
+    <p>&copy; 2023 Job Portal</p>
+  </footer>
+</body>
+</html>

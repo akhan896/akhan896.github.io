@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Portal</title>
+  <style>
+    /* Resetting default margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f46e;
+      color: #3333333b;
+      margin: 0;
+    }
+
+    /* Header */
+    header {
+      background-color: blue ;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 5px 0;
+    }
+
+    header p {
+      margin-top: 5px;
+    }
+
+    header div {
+      margin-top: 10px;
+    }
+
+    header div button {
+      padding: 8px 20px;
+      margin: 0 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      background-color: #555;
+      color: #fff;
+      transition: background-color 0.3s ease;
+    }
+
+    header div button:hover {
+      background-color: #777;
+    }
+
+    /* Navigation */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color: #444;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ccc;
+    }
+
+    /* Main sections */
+    section {
+      padding: 20px;
+      margin: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    /* Forms */
+    form {
+      margin-top: 20px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"],
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    form input[type="submit"],
+    .job button {
+      padding: 8px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      background-color: #555;
+      color: #fff;
+      transition: background-color 0.3s ease;
+    }
+
+    form input[type="submit"]:hover,
+    .job button:hover {
+      background-color: #777;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to our Job Portal</h1>
+    <p>Find the perfect job for you</p>
+    <div>
+      <button onclick="location.href='#login'">Login</button>
+      <button onclick="location.href='#signup'">Sign Up</button>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#search">Search Jobs</a></li>
+      <li><a href="#post">Post a Job</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+  <section id="home">
+    <h2>Latest Jobs</h2>
+    <!-- Placeholder for job listings -->
+    <div class="job">
+      <h3>Job Title</h3>
+      <p>Company: XYZ Inc.</p>
+      <p>Description: Lorem ipsum dolor sit amet...</p>
+      <button>Apply</button>
+    </div>
+    <!-- Additional job listings -->
+  </section>
+  <section id="search">
+    <h2>Search Jobs</h2>
+    <!-- Placeholder for search form -->
+    <form action="/search" method="GET">
+      <input type="text" name="keyword" placeholder="Keyword">
+      <input type="text" name="location" placeholder="Location">
+      <input type="submit" value="Search">
+    </form>
+  </section>
+  <section id="post">
+    <h2>Post a Job</h2>
+    <!-- Placeholder for job posting form -->
+    <form action="/post-job" method="POST">
+      <input type="text" name="job_title" placeholder="Job Title">
+      <input type="text" name="company_name" placeholder="Company Name">
+      <textarea name="job_description" placeholder="Job Description"></textarea>
+      <input type="submit" value="Post Job">
+    </form>
+  </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to our job portal! At this Job Portal, we strive to connect talented individuals with exceptional opportunities. 
+        Our mission is to simplify the job search process, providing a platform that bridges the gap between employers and job seekers. 
+        Whether you're a seasoned professional or just starting your career, we're here to support you in finding your ideal job. 
+        Our dedicated team ensures that our portal is user-friendly, reliable, and constantly updated with the latest job openings 
+        across various industries.Join us in exploring endless possibilities for your career growth!</p>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Contact information goes here.</p>
+  </section>
+  <footer>
+    <p>&copy; 2023 Job Portal</p>
+  </footer>
+</body>
+</html>
